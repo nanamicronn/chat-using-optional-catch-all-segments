@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { signin, signup } from './actions'
 
 export default function LoginPage() {
@@ -12,9 +11,9 @@ export default function LoginPage() {
         <button formAction={signin}>Sign in</button>
         <button formAction={signup}>Sign up</button>
       </form>
-      <Link href={'/auth/oauth'}>
-        <button>ぐーぐる</button>
-      </Link>
+      {/*<Link href={'/auth/oauth'}>*/}
+      {/*  <button>ぐーぐる</button>*/}
+      {/*</Link>*/}
     </div>
   )
 }
