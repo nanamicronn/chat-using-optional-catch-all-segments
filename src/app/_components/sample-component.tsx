@@ -3,7 +3,7 @@ import { createClientComponentClient } from '@/utils/supabase/client'
 import { useEffect, useState } from 'react'
 
 export const SampleComponent = () => {
-  const [data, setData] = useState<any>()
+  const [data, setData] = useState<{ id: number; title: string }[] | null>()
   useEffect(() => {
     const fetch = async () => {
       const supabase = createClientComponentClient()
